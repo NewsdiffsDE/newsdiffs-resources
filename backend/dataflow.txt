@@ -1,0 +1,22 @@
+ahaaalso 
+um den ganzen prozess ins rollen zu bringen 
+muss erstmal der scraper aufgerufen werden. das macht man entweder via kommandozeile in ner endlosen while schleife (nicht so gute lösung) oder via cronjob 
+cronjob is ein script dass in bestimmten intervallen etwas abruft (zb nachts datenbanken backups erstellen) 
+dann läuft der scraper, der liegt in websites/managements/commands/ 
+der ruft als erstes die parser innit datei auf 
+commands/parser/-innit-.py 
+da ist ne liste von urls bzw. den parsern der urls drin 
+diese individuellen url parser (für jede homepage) werden dann aufgerufen und greifen auf die websites der zeitungen zu 
+hier holen sie wiederum die urls der artikel die auf der startseite verlinkt sind und geben sie an den baseparser weiter 
+(der liegt auch im ordner  ../ commands/parser/_innit_.py ) 
+dieser baseparser nutzt ein program namens urllib2 um den html source code dieser artikel aus dem web zu holen 
+die methode heisst grab_url und ist voll wichtig, ca. line 30  
+dann gibt der parser den den html code wieder zurück an die individuellen site parser 
+und die parser, das ist woran anja und robert gerade sitzen, strippen -mit hilfe von beautiful soup- den html code zu plain text 
+dieser plain text wird dann wieder an den scraper übergeben 
+der scraper benutzt dann ein google script diff_match_patch.py, das liegt im ordner website, um die diffs herauszuarbeiten 
+zum abgleich der textdateien benutzt der scraper ein git repo 
+die artikel werden dann im ordner articles gespeichert und nur die änderungen selbst in der datenbank 
+
+
+
