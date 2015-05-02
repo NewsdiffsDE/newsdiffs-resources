@@ -1,0 +1,64 @@
+.navbar-brand img {
+	width: 150px;
+}
+
+
+#imaginary_container{
+    margin-top:10%; /* Don't copy this */
+    margin-bottom: 30%;
+}
+.stylish-input-group .input-group-addon{
+    background: white !important; 
+}
+.stylish-input-group .form-control{
+	border-right:0; 
+	box-shadow:0 0 0; 
+	border-color:#ccc;
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+}
+
+.footer_bottom {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: #666666;
+	padding-top: 10px;
+}
+
+.footer_social img {
+	width: 18px;
+}
+
+.footer_bottom ul {
+	list-style: none;
+}
+
+.footer_bottom ul li{
+	float: right;
+}
+
+.copy p {
+	float: left;
+}
+
+.navbar {
+	background-color: #fff;
+	border: none;
+}
+
+
+
+.active {
+	background-color: #666666;
+}
+
+.navbar-nav {
+	float: right;
+}
+
+.dropdown-menu {
+
+}
