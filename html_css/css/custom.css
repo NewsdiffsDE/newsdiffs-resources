@@ -33,9 +33,6 @@
 	color: #d8d8d8;
 }
 
-.footer_social a{
-	margin: 5px;
-}
 
 .footer_social li:hover{
 	background-color: transparent;
@@ -78,7 +75,7 @@
 
 
 
-ul {
+.nav ul {
   text-align: center;
   display: inline;
   margin: 0;
@@ -88,7 +85,7 @@ ul {
   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
 }
-ul li {
+.nav ul li {
   display: inline-block;
   width: 150px;
   position: relative;
@@ -99,11 +96,11 @@ ul li {
   -o-transition: all 0.2s;
   transition: all 0.2s;
 }
-ul li:hover {
+.nav ul li:hover {
   background: #d8d8d8;
 
 }
-ul li ul {
+.nav ul li ul {
   padding: 0px;
   position: absolute;
   top: 48px;
@@ -120,17 +117,22 @@ ul li ul {
   -o-transition: opacity 0.2s;
   -transition: opacity 0.2s;
 }
-ul li ul li { 
+.nav ul li ul li { 
   background: #d8d8d8; 
   display: block;
   
 
 }
-ul li ul li:hover { background: #d8d8d8; }
-ul li:hover ul {
+.nav ul li ul li:hover { background: #d8d8d8; }
+.nav ul li:hover ul {
   display: block;
   opacity: 1;
   visibility: visible;
   padding: 0;
   
+}
+
+.article-options li{
+	display: inline;
+	list-style: none;
 }
